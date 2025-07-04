@@ -1,11 +1,43 @@
-# Full Stack Job Portal with React JS, Tailwind CSS, Supabase, Clerk, Shadcn UI Tutorial 🔥🔥
-## https://www.youtube.com/watch?v=2XF-HgauItk
-![hireable 1](https://github.com/user-attachments/assets/1da23b25-1f29-4402-be74-03685d9b732d)
+# 💼 Hireable — Your Gateway to Career Opportunities
 
-### Make sure to create a `.env` file with following variables -
+A clean, modern job portal built with React, Vite, Supabase, Clerk Auth, and Tailwind CSS.  
+Tailored for students, freshers, and job seekers to explore jobs that align with their skills.
 
-```
-VITE_SUPABASE_URL=
-VITE_SUPABASE_ANON_KEY=
-VITE_CLERK_PUBLISHABLE_KEY=
-```
+---
+
+## 🚀 Features
+
+- 🔍 **Skill Match %** — Instantly see job fit.
+- ❤️ **Save Jobs** — Bookmark and revisit favorite roles.
+- 📊 **Admin Dashboard** — Track jobs, applications & top roles.
+- 👤 **Clerk Auth** — Secure login with profile avatars.
+- 🎨 **Modern UI** — Glassmorphism, smooth shadows, and animations.
+- 📱 **Responsive** — Works seamlessly across devices.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React, Vite
+- **Styling:** Tailwind CSS, Shadcn UI
+- **Auth:** Clerk
+- **Backend/DB:** Supabase
+- **Charts:** Recharts
+- **Hosting:** Vercel
+
+---
+
+## 🔗 Live Site
+
+👉 [https://hireable.vercel.app](https://hireable.vercel.app)
+
+---
+
+## 👨‍💻 Developer
+
+Made with care by **Sundram Rai**  
+[GitHub](https://github.com/SundramRai) · [LinkedIn](https://www.linkedin.com/in/your-profile)
+
+---
+
+> 🎯 Solving a real-world problem with simplicity. If you like it, ⭐ the repo!
