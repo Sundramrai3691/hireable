@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom";
 const AppLayout = () => {
   return (
     <div>
-      <div className="grid-background"></div>
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 absolute inset-0 -z-10"></div>
+
       <main className="min-h-screen container">
         <Header />
         <Outlet />

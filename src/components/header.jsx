@@ -35,13 +35,13 @@ const Header = () => {
         <Link to="/">
           <div className="flex items-center gap-2">
             <img src="/logo.png" className="h-20" alt="Hireable Logo" />
-            <h1 className="text-2xl font-bold">Hireable</h1>
+            {/* <h1 className="text-2xl font-bold">Hireable</h1> */}
           </div>
         </Link>
 
         <div className="flex gap-8">
           <SignedOut>
-            <Button variant="outline" onClick={() => setShowSignIn(true)}>
+            <Button className="bg-white text-black font-semibold px-4 py-2 rounded-md shadow hover:bg-gray-200 transition" onClick={() => setShowSignIn(true)}>
               Login
             </Button>
           </SignedOut>

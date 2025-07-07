@@ -18,39 +18,48 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
-      <section className="bg-white/20 backdrop-blur-md shadow-xl rounded-xl p-10 text-center text-gray-900 dark:text-white font-sans max-w-xl mx-auto">
-        <h1 className="text-4xl font-bold">
-          Find Your{" "}
-          <span className="text-blue-300 font-semibold dark:text-blue-400">
-            Dream Job
-          </span>{" "}
-          on{" "}
+    <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20 font-sans text-white">
+      {/* Hero Section */}
+      <section className="bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl rounded-2xl p-10 text-center max-w-xl mx-auto transition-all duration-300 hover:scale-[1.02]">
+        <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight">
+          Find Your <span className="text-blue-400">Dream Job</span> on{" "}
           <span className="text-accent">Hireable</span>
         </h1>
-        <p className="text-sm text-muted mt-2">
+        <p className="text-sm text-gray-300 mt-2">
           Explore curated jobs and apply in seconds.
         </p>
         <span className="flex items-center gap-2 sm:gap-6 justify-center mt-4">
           <img
             src="/logo.png"
-            className="h-14 sm:h-24 lg:h-32"
+            className="h-14 sm:h-24 lg:h-32 drop-shadow-lg"
             alt="Hireable Logo"
           />
         </span>
       </section>
+
+      {/* Buttons */}
       <div className="flex gap-6 justify-center">
         <Link to={"/jobs"}>
-          <Button variant="blue" size="xl">
+          <Button
+            variant="blue"
+            size="xl"
+            className="hover:scale-105 hover:shadow-xl transition-all duration-200"
+          >
             Find Jobs
           </Button>
         </Link>
         <Link to={"/post-job"}>
-          <Button variant="destructive" size="xl">
+          <Button
+            variant="destructive"
+            size="xl"
+            className="hover:scale-105 hover:shadow-xl transition-all duration-200"
+          >
             Post a Job
           </Button>
         </Link>
       </div>
+
+      {/* Company Logos Carousel */}
       <Carousel
         plugins={[
           Autoplay({
@@ -72,20 +81,29 @@ const LandingPage = () => {
         </CarouselContent>
       </Carousel>
 
-      <img src="/banner.jpeg" className="w-full" />
+      {/* Banner Image */}
+      <img
+  src="/banner.png"
+  alt="Job Banner"
+  className="w-full max-h-[600px] object-cover rounded-xl shadow-lg"
+/>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Card className="bg-white/30 backdrop-blur-lg text-black shadow-md rounded-lg p-6 font-sans">
+
+
+
+      {/* Cards for Seeker and Employer */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-xl rounded-2xl p-6 font-sans transition-all duration-300 hover:scale-[1.02]">
           <CardHeader>
-            <CardTitle className="font-bold">For Job Seekers</CardTitle>
+            <CardTitle className="font-bold text-xl">For Job Seekers</CardTitle>
           </CardHeader>
           <CardContent>
             Search and apply for jobs, track applications, and more.
           </CardContent>
         </Card>
-        <Card className="bg-white/30 backdrop-blur-lg text-black shadow-md rounded-lg p-6 font-sans">
+        <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-xl rounded-2xl p-6 font-sans transition-all duration-300 hover:scale-[1.02]">
           <CardHeader>
-            <CardTitle className="font-bold">For Employers</CardTitle>
+            <CardTitle className="font-bold text-xl">For Employers</CardTitle>
           </CardHeader>
           <CardContent>
             Post jobs, manage applications, and find the best candidates.
@@ -93,7 +111,8 @@ const LandingPage = () => {
         </Card>
       </section>
 
-      <Accordion type="multiple" className="w-full">
+      {/* FAQ Accordion */}
+      <Accordion type="multiple" className="w-full text-white">
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
             <AccordionTrigger>{faq.question}</AccordionTrigger>
