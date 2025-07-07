@@ -1,43 +1,46 @@
-# 💼 Hireable — Your Gateway to Career Opportunities
+# Hireable - A Modern Job Portal
 
-A clean, modern job portal built with React, Vite, Supabase, Clerk Auth, and Tailwind CSS.  
-Tailored for students, freshers, and job seekers to explore jobs that align with their skills.
+Hireable is a full-stack job portal built with modern technologies to help job seekers find opportunities and employers discover the right talent — all through a clean, intuitive interface.
 
----
+## Features
 
-## 🚀 Features
+- Clean and responsive UI built with Tailwind CSS and glassmorphism styling.
+- Skill Match %: Compare your profile to job requirements and get instant compatibility feedback.
+- Saved Jobs: Bookmark jobs and revisit them easily.
+- Admin Dashboard: Visual insights into job postings and applications using charts.
+- Authentication handled via Clerk for secure, seamless sign-ins.
+- Real-time backend powered by Supabase.
 
-- 🔍 **Skill Match %** — Instantly see job fit.
-- ❤️ **Save Jobs** — Bookmark and revisit favorite roles.
-- 📊 **Admin Dashboard** — Track jobs, applications & top roles.
-- 👤 **Clerk Auth** — Secure login with profile avatars.
-- 🎨 **Modern UI** — Glassmorphism, smooth shadows, and animations.
-- 📱 **Responsive** — Works seamlessly across devices.
+## Tech Stack
 
----
+- Frontend: React, Vite, Tailwind CSS
+- Backend: Supabase (PostgreSQL, Auth)
+- Auth: Clerk
+- Visualization: Recharts
+- Deployment: Vercel
 
-## 🛠 Tech Stack
+## Setup Instructions
 
-- **Frontend:** React, Vite
-- **Styling:** Tailwind CSS, Shadcn UI
-- **Auth:** Clerk
-- **Backend/DB:** Supabase
-- **Charts:** Recharts
-- **Hosting:** Vercel
+1. Clone the repo  
+   `git clone https://github.com/your-username/hireable-app.git`
 
----
+2. Install dependencies  
+   `npm install`
 
-## 🔗 Live Site
+3. Set up environment variables  
+   Create a `.env` file and add your keys:
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_anon_key
+   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
 
-👉 [https://hireable.vercel.app](https://hireable.vercel.app)
 
----
+4. Run the development server  
+`npm run dev`
 
-## 👨‍💻 Developer
+## Live Site
 
-Made with care by **Sundram Rai**  
-[GitHub](https://github.com/SundramRai) · [LinkedIn](https://www.linkedin.com/in/your-profile)
+Visit the deployed site here: [[https://hireable.vercel.app](https://hireable-app-tau.vercel.app/)]
 
----
+## Author
 
-> 🎯 Solving a real-world problem with simplicity. If you like it, ⭐ the repo!
+Made with thought and intention by [Sundram Rai]([https://github.com/sundramrai](https://github.com/Sundramrai3691))
